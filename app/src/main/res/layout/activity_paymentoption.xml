@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:stripe="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.kolip.swift.flireview">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/rotate" />
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment"
+                android:textColor="#1a0101"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/namee"
+        android:layout_marginTop="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#1a0101"
+        android:textAllCaps="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="10dp"/>
+</RelativeLayout>
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/cardclr1">
+
+        <TextView
+            android:id="@+id/dptcitypay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="false"
+            android:text="Depart city"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+
+        <ImageButton
+            android:id="@+id/ccpay1"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dptcitypay1"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/depart"
+            android:backgroundTint="#ffffff"/>
+
+
+
+        <TextView
+            android:id="@+id/dstcitypay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ccpay1"
+            android:text="Destination city"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-condensed"/>
+
+
+
+        <TextView
+            android:id="@+id/ddpay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="43dp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-condensed"/>
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#2dc6e1">
+
+        <TextView
+            android:id="@+id/flnamepay"
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1a0101"
+            android:textAllCaps="true"
+            android:text="flightname"
+            android:layout_marginRight="40dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginLeft="10dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+                                android:id="@+id/faree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Amount payable"
+                                android:textColor="#1a0101"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:textSize="18dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/faree"
+                                android:layout_marginLeft="10dp"
+                                android:text="*GST of Rs.150 extra is added"/>
+
+
+                            <TextView
+                                android:id="@+id/faree1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#1a0101"
+                                android:textSize="18dp"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="sans-serif-condensed"
+                               android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"/>
+
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/r1"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/faree1"
+
+                                />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+
+
+
+        <TextView
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#050000"
+            android:textAllCaps="true"
+            android:text="payment methods"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginLeft="10dp"/>
+
+
+        <com.stripe.android.view.CardInputWidget
+            android:id="@+id/cardwid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            stripe:cardTint="@android:color/holo_purple"
+            stripe:cardTextErrorColor="@android:color/holo_orange_dark"
+            />
+
+
+        <Button
+        android:id="@+id/goo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/clr2"
+        android:text="pay" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
